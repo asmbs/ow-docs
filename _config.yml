@@ -9,8 +9,8 @@
 title: ObesityWeek Docs
 email: it@asmbs.org
 baseurl: /ow-docs
-twitter_username: jekyllrb
-github_username:  jekyll
+exclude:
+    - "README.md"
 
 # Build settings
 markdown: kramdown
