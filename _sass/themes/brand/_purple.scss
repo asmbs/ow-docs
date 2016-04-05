@@ -1,0 +1,19 @@
+/* ==========================================================================
+   OW Purple Theme
+   ========================================================================== */
+
+.t-brand-purple {
+
+  .c-navigation,
+  .c-header {
+    background: $c__brand-purple;
+  }
+
+  .c-article__main a:not(.c-btn) {
+    color: $c__brand-purple;
+  }
+
+  .c-footer a {
+    color: $c__brand-purple;
+  }
+}

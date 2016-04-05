@@ -1,0 +1,19 @@
+/* ==========================================================================
+   OW Green Theme
+   ========================================================================== */
+
+.t-brand-green {
+
+  .c-navigation,
+  .c-header {
+    background: $c__brand-green;
+  }
+
+  .c-article__main a:not(.c-btn) {
+    color: $c__brand-green;
+  }
+
+  .c-footer a {
+    color: $c__brand-green;
+  }
+}

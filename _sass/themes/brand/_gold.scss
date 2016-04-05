@@ -1,0 +1,19 @@
+/* ==========================================================================
+   OW Gold Theme
+   ========================================================================== */
+
+.t-brand-gold {
+
+  .c-navigation,
+  .c-header {
+    background: $c__brand-gold;
+  }
+
+  .c-article__main a:not(.c-btn) {
+    color: $c__brand-gold;
+  }
+
+  .c-footer a {
+    color: $c__brand-gold;
+  }
+}
