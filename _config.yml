@@ -5,6 +5,7 @@
 
 # Site settings
 title: ObesityWeek Docs
+owner: ObesityWeek, LLC
 email: it@asmbs.org
 baseurl: /ow-docs
 theme: brand-purple
