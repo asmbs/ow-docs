@@ -38,3 +38,14 @@
   line-height: 1;
   font-size: 1.6rem; // 16px
 }
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
