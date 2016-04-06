@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Code example styles
+   ========================================================================== */
+
+.d-example {
+  @include clearfix();
+  box-shadow: 2px 2px 6px transparentize($c__black, 0.88);
+  padding: 0.25rem 1.0rem 1.5rem;
+
+  > .toggle {
+    margin: 0 0 0.5rem;
+
+    a {
+      font-size: 75%;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  > .wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .input,
+    .output {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    .input {
+      left: -100%;
+      &.active {
+        left: 0;
+      }
+    }
+    .output {
+      left: 100%;
+      &.active {
+        left: 0;
+      }
+    }
+  }
+}
