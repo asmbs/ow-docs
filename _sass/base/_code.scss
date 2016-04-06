@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Code styles
+   ========================================================================== */
+
+code,
+kbd,
+pre,
+samp {
+    @include ff--mono();
+}
+
+code {
+    $__c: $c__brand-green;
+    background: mix($__c, $c__white, 7.5%);
+    border-radius: 4px;
+    padding: 2px 4px 3px;
+    font-size: 90%;
+    color: $__c;
+
+    pre & {
+        background: none;
+        border-radius: none;
+        padding: 0;
+        color: inherit;
+    }
+}
