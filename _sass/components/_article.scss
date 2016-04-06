@@ -4,6 +4,15 @@
 
 .c-article {
 
+  table {
+    border-collapse: collapse;
+
+    th,
+    td {
+      border: 1px solid lighten($c__grey, 20%);
+      padding: 0.5rem 1.0rem;
+    }
+  }
 }
 
 .c-article__main {
