@@ -17,3 +17,6 @@ include:
     - "_pages"
 exclude:
     - "README.md"
+    - "node_modules"
+    - "gulpfile.js"
+    - "package.json"
