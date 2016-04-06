@@ -25,6 +25,7 @@
 
     .input,
     .output {
+      @include fx--transition(left 0.3s ease-in-out 0s);
       position: absolute;
       top: 0;
       width: 100%;
