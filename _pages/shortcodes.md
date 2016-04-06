@@ -47,13 +47,21 @@ The **New Orleans** theme provides a few useful shortcodes for you to use:
 
 ### Buttons — `[btn]` {#sc-button}
 
-Creates links styled as buttons.
+Creates links that are styled as buttons, allowing you to emphasize specific calls to action
+in your content.
 
 #### Example
 
 {% include_relative examples/sc-button.md %}
 
 #### Attributes
+
+Name    | Default   | Description
+--------|-----------|---------------------------------------------------------------------------
+href    | —         | **Required.** The URL the button should link to.
+color   | `default` | The button color. You can choose any of the theme colors.
+outline | `false`   | Styles the button in reverse—uses a transparent background and uses the supplied color for the border and text.
+size    | —         | Adjusts the size of the button. Possible choices are `xs`, `sm` and `lg`. Omit this option to use the default size.
 
 ### Grid display — `[row]` and `[col]` {#sc-grid}
 
