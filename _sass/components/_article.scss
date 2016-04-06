@@ -22,7 +22,10 @@
   }
 
   a:not(.c-btn) {
-    text-decoration: underline;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
   }
 
   blockquote {
