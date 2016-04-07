@@ -30,6 +30,15 @@
     color: rgba($c__black, .7);
   }
 
+  ol,
+  ul {
+    margin-left: 3.5rem;
+
+    li {
+      padding-left: .5rem;
+    }
+  }
+
   a:not(.c-btn) {
     text-decoration: none;
     &:hover {
