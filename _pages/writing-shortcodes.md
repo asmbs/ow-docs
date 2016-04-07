@@ -60,9 +60,24 @@ _(Screenshot taken from site)_
 Name    | Default   | Description
 --------|-----------|---------------------------------------------------------------------------
 href    | —         | **Required.** The URL the button should link to.
-color   | `default` | The button color. You can choose any of the theme colors.
+color   | `default` | The button color. You can choose any available theme color (see below).
 outline | `false`   | Styles the button in reverse—uses a transparent background and uses the supplied color for the border and text.
 size    | —         | Adjusts the size of the button. Possible choices are `xs`, `sm` and `lg`. Omit this option to use the default size.
+
+##### Color options
+
+Color Name | Example
+-----------|---
+default    | <span class="colorsample color-default">Color Sample</span>
+success    | <span class="colorsample color-success">Color Sample</span>
+info       | <span class="colorsample color-info">Color Sample</span>
+warning    | <span class="colorsample color-warning">Color Sample</span>
+danger     | <span class="colorsample color-danger">Color Sample</span>
+purple     | <span class="colorsample color-purple">Color Sample</span>
+green      | <span class="colorsample color-green">Color Sample</span>
+gold       | <span class="colorsample color-gold">Color Sample</span>
+teal       | <span class="colorsample color-teal">Color Sample</span>
+pink       | <span class="colorsample color-pink">Color Sample</span>
 
 -----
 
@@ -101,6 +116,15 @@ _(Screenshot taken from site)_
 {% include example/end.html %}
 
 #### Attributes
+
+The following attributes apply to the `[col]` shortcode only. The `[row]` shortcode does not accept any attributes.
+
+Name  | Default | Description
+------|-----------|---------------------------------------------------------------------------
+width | —         | **Required.** The number of columns (up to 12) that the container should span.
+size  | `md`      | The size of the device screen required to "activate" the column. Below this size, the content will display at full width like normal text. Possible values are `xs`, `sm`, `md` and `lg`— which correspond (roughly) to _phone_, _tablet_, _notebook_ and _desktop display_, respectfully.
+push  | —         | Pushes the container to the right the given number of columns. Used in conjunction with **pull** (below) to swap the order of columns in a row.
+pull  | —         | Pulls the container to the left the given number of columns. Used in conjunction with **push** (above) to swap the order of columns in a row.
 
 -----
 
