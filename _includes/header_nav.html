@@ -1,0 +1,17 @@
+{% assign base = page.url | split: '/' | shift | first %}
+
+<nav class="c-header__nav">
+  <ul>
+    {% for node in site.pages %}
+      {% if node.url contains base %}
+        {% assign tree = node.url | split: '/' | shift %}
+        {% assign depth = tree | size %}
+        {% if depth > 1 %}
+          {% assign active = false %}
+          {% if page.url == node.url %}{% assign active = true %}{% endif %}
+          <li><a href="{{ node.url | prepend: site.baseurl }}" class="{% if active %}active{% endif %}">{{ node.title }}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

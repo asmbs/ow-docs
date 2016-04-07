@@ -10,6 +10,45 @@
   background: $t-theme;
 }
 
+.c-header__nav {
+  @include ff--mono(500);
+  @include fs--header-nav;
+  @include clearfix;
+  margin-top: 1rem;
+
+  ul {
+    list-style: none outside none;
+    margin-left: -1rem;
+
+    li {
+      display: block;
+      float: left;
+      border-left: 2px solid transparentize($c__white, 0.75);
+
+      &:first-child {
+        border-left: none;
+      }
+
+      a {
+        display: block;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  a {
+    color: transparentize($c__white, 0.33);
+
+    &:hover {
+      text-decoration: underline;
+    }
+    &.active {
+      font-weight: 700;
+      color: $c__white;
+    }
+  }
+}
+
 .c-header__title {
   position: relative;
   @include ff--mono(500);
