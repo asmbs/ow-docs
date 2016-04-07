@@ -1,0 +1,5 @@
+main:
+  - text: Home
+    url: /
+  - text: Writing
+    url: /writing/

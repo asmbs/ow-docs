@@ -1,5 +1,13 @@
+
+{% assign menu = site.data.menus.main %}
+
+{{ menu }}
 <nav class="c-navigation {% if site.fixedNav == 'true' %}is-fixed{% endif %}">
   <div class="c-navigation__container u-container">
-    <a class="c-navigation__item {% if page.url == '/' %}is-active{% endif %}" href="{{ "/" | prepend: site.baseurl }}">Home</a>
+    {% for node in menu %}
+      {% assign active = false %}
+      {% if page.url == node.url %}{% assign active = true %}{% endif %}
+      <a class="c-navigation__item {% if active %}is-active{% endif %}" href="{{ node.url | prepend: site.baseurl }}">{{ node.text }}</a>
+    {% endfor %}
   </div>
 </nav>
