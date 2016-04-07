@@ -1,7 +1,7 @@
 ---
 layout:    page
 title:     Using Shortcodes
-permalink: /writing/using-shortcodes/
+permalink: /writing/shortcodes/
 ---
 
 [p/markdown]: {{ site.baseurl }}/writing/markdown
