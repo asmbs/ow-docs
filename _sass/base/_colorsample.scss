@@ -1,0 +1,23 @@
+
+@mixin c--bgcolor($color) {
+  background-color: $color;
+}
+
+.colorsample {
+  border-radius: 3px;
+  padding: 0.25rem 0.75rem;
+  font-size: 90%;
+  line-height: 1;
+  color: $c__white;
+
+  &.color-default { @include c--bgcolor($c__brand-default); }
+  &.color-success { @include c--bgcolor($c__brand-success); }
+  &.color-info    { @include c--bgcolor($c__brand-info); }
+  &.color-warning { @include c--bgcolor($c__brand-warning); }
+  &.color-danger  { @include c--bgcolor($c__brand-danger); }
+  &.color-purple  { @include c--bgcolor($c__brand-purple); }
+  &.color-green   { @include c--bgcolor($c__brand-green); }
+  &.color-gold    { @include c--bgcolor($c__brand-gold); }
+  &.color-teal    { @include c--bgcolor($c__brand-teal); }
+  &.color-pink    { @include c--bgcolor($c__brand-pink); }
+}
